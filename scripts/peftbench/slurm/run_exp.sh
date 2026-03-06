@@ -14,15 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# datasets=(cb copa wsc svamp conala rte mrpc openbookqa wic stsb cola gsm8k siqa math_qa winogrande sst2 hellaswag qnli)
-# datasets=(copa conala rte mrpc openbookqa wic stsb cola gsm8k siqa math_qa winogrande sst2 hellaswag qnli mnli mmlu qqp apps codealpacapy boolq piqa record multirc)
-# peft_methods=(prefix-tuning prompt-tuning p-tuning lora lntuning ia3)
-datasets=(cb copa svamp cola sst2 hellaswag wsc)
-peft_methods=(bitfit)
+datasets=(mnli qqp qnli sst2 stsb mrpc rte cola record multirc boolq wic wsc cb copa mmlu piqa siqa hellaswag winogrande openbookqa math_qa gsm8k svamp conala codealpacapy apps)
+peft_methods=(bitfit ia3 prompt-tuning lora lntuning prefix-tuning p-tuning)
 models=(llama-3-8b-instruct)
-# seeds=(42 123 456 789 101112)
-seeds=(123 456 789 101112)
-# EPOCHS=20
+seeds=(42 123 456 789 101112)
 EPOCHS=10
 
 for s in ${seeds[@]};

@@ -14,16 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# datasets=(mnli qqp qnli sst2 stsb mrpc rte cola)
-# peft_methods=(ia3 prefix-tuning prompt-tuning lora lntuning)
-# models=(gemma-3-1b-it llama-3-8b-instruct mistral-7b-instruct)
-
-datasets=(codealpacapy boolq piqa record multirc) # GPU1
-# datasets=(mmlu mnli qqp apps) # GPU2
-peft_methods=(prefix-tuning prompt-tuning p-tuning lora lntuning ia3)
+datasets=(mnli qqp qnli sst2 stsb mrpc rte cola record multirc boolq wic wsc cb copa mmlu piqa siqa hellaswag winogrande openbookqa math_qa gsm8k svamp conala codealpacapy apps)
+peft_methods=(bitfit ia3 prompt-tuning lora lntuning prefix-tuning p-tuning)
 models=(llama-3-8b-instruct)
 seeds=(42 123 456 789 101112)
-EPOCHS=20
+EPOCHS=10
 
 for s in ${seeds[@]};
 do
