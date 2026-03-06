@@ -5,7 +5,9 @@
 ----
 
 ### Unified Benchmark for PEFT methods
-This repository contains all files necessary to run PEFT-Bench and to replicate our paper: [PEFT-Bench: A Parameter-Efficient Fine-Tuning Methods Benchmark](https://arxiv.org/pdf/2511.21285v2)
+This repository contains all files necessary to run PEFT-Bench and to replicate our paper: 
+
+[**PEFT-Bench: A Parameter-Efficient Fine-Tuning Methods Benchmark**](https://arxiv.org/pdf/2511.21285v2)
 
 </div>
 
